@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/flumeng-kafka.iml" filepath="$PROJECT_DIR$/flumeng-kafka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flumeng-kafka-plugin/flumeng-kafka-plugin.iml" filepath="$PROJECT_DIR$/flumeng-kafka-plugin/flumeng-kafka-plugin.iml" />
+    </modules>
+  </component>
+</project>
+

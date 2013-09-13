@@ -1,0 +1,9 @@
+<component name="CopyrightManager">
+  <copyright>
+    <option name="notice" value="/* Copyright (c) 2013.09.06 BeyondJ2EE.&#10; * All right reserved.&#10; * http://beyondj2ee.github.com&#10; * This software is the confidential and proprietary information of BeyondJ2EE&#10; * , Inc. You shall not disclose such Confidential Information and&#10; * shall use it only in accordance with the terms of the license agreement&#10; * you entered into with BeyondJ2EE.&#10; *&#10; * Revision History&#10; * Author              Date                  Description&#10; * ===============    ================       ======================================&#10; *  beyondj2ee               &#10; */" />
+    <option name="keyword" value="Copyright" />
+    <option name="allowReplaceKeyword" value="" />
+    <option name="myName" value="flume" />
+    <option name="myLocal" value="true" />
+  </copyright>
+</component>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- ARTIFACT SECTION -->
+    <groupId>org.apache.flume</groupId>
+    <artifactId>flumeng-kafka-parent</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>flumeng-kafka-plugin-parent</name>
+
+    <!-- SCM SECTION -->
+    <scm>
+        <connection>http://beyondj2ee.github.com/flumeng-kafka</connection>
+        <tag>HEAD</tag>
+    </scm>
+
+    <!-- DEVELOPER SECTION -->
+    <developers>
+        <developer>
+            <id>beyondj2ee</id>
+            <name>Taeki.Kim</name>
+            <email>beyondj2ee@gmail.com</email>
+            <url>http://beyondj2ee.wordpress.com</url>
+            <organization>UNUS</organization>
+            <organizationUrl>http://www.theunus.com/</organizationUrl>
+            <roles>
+                <role>application architect</role>
+            </roles>
+            <properties>
+                <twitter>@beyondj2ee</twitter>
+                <facebook>https://www.facebook.com/beyondj2ee</facebook>
+            </properties>
+        </developer>
+    </developers>
+
+    <!-- LICENSES SECTION -->
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+            <comments>A business-friendly OSS license</comments>
+        </license>
+    </licenses>
+
+    <!-- PROPERTIES SECTION-->
+    <properties>
+        <!-- junit -->
+        <junit>4.11</junit>
+
+        <!-- maven -->
+        <maven.encoding>UTF-8</maven.encoding>
+        <maven.jdk>1.6</maven.jdk>
+        <maven.compiler>3.0</maven.compiler>
+        <maven.resources>2.5</maven.resources>
+        <maven.surefire>2.12</maven.surefire>
+        <maven.dependency>2.8</maven.dependency>
+
+        <!-- flume -->
+        <flume>1.4.0</flume>
+
+        <!-- log -->
+        <slf4j>1.6.1</slf4j>
+        <log4j>1.2.16</log4j>
+        <logback>1.0.13</logback>
+
+        <!-- kafka -->
+        <kafka>0.8.0-beta1</kafka>
+        <scala>2.9.2</scala>
+        <metrics>2.2.0</metrics>
+    </properties>
+
+    <!-- DEPENDENCIES SECTION-->
+    <dependencies>
+
+        <!-- junit -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit}</version>
+        </dependency>
+
+        <!-- log -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j}</version>
+        </dependency>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>${log4j}</version>
+        </dependency>
+
+    </dependencies>
+
+    <!-- BUILD SECTION-->
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven.compiler}</version>
+                <configuration>
+                    <source>${maven.jdk}</source>
+                    <target>${maven.jdk}</target>
+                    <encoding>${maven.encoding}</encoding>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${maven.surefire}</version>
+                <configuration>
+                    <skipTests>true</skipTests>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <!-- MODULES SECTION-->
+    <modules>
+        <module>flumeng-kafka-plugin</module>
+    </modules>
+
+</project>
